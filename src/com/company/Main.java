@@ -24,7 +24,7 @@ public class Main {
                 .forEach(System.out::println);
         System.out.println("Призывники:");
         people.stream()
-                .filter(person -> person.getAge() >= 18 && person.getAge() < 27)
+                .filter(person -> person.getAge() >= 18 && person.getAge() < 27 && person.getSex().equals(Sex.MAN))
                 .forEach(person -> System.out.println(person.getName() + " " + person.getFamily()));
         System.out.println("Работоспособные люди:");
         people.stream()
